@@ -84,12 +84,4 @@ geoserver_data("https://gis-a.ie.ehealthafrica.org/geoserver/eHA_db/ows?service=
 
 #Settlement Area
 geoserver_data("https://gis-a.ie.ehealthafrica.org/geoserver/eHA_db/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=eHA_db:settlement_areas&outputFormat=csv", "settlement_area")
-
-#Settlement Point
-geoserver_data("https://gis-a.ie.ehealthafrica.org/geoserver/eHA_db/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=eHA_db:sv_settlements&outputFormat=csv", 'settlement_point')
-
-#Settlement Area
-geoserver_data("https://gis-a.ie.ehealthafrica.org/geoserver/eHA_db/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=eHA_db:settlement_areas&outputFormat=csv", "settlement_area")
-
-
     
