@@ -10,7 +10,7 @@ def data_to_db(df, tablename):
         'postgresql+psycopg2://dami_s:2CsdwGamkqx20@104.197.243.5/cars45db')
     db_conn = sql_engine.connect()
     try:
-        df.to_sql(tablename, db_conn, if_exists='replace', method='multi', schema = 'geospatial_data')
+        df.to_sql(tablename, db_conn, if_exists='replace', method='multi', schema = 'geospatial_data', chunksize=5000)
     except ValueError as vx:
         print(vx)
     except Exception as ex:
